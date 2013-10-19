@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>prettyCheckable</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.3</version>
     <name>prettyCheckable</name>
     <description>WebJar for prettyCheckable</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/prettyCheckable</url>
         <connection>scm:git:https://github.com/webjars/prettyCheckable.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/prettyCheckable.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>prettyCheckable-1.3</tag>
     </scm>
     
     <dependencies>
@@ -88,7 +88,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/prettyCheckable-${upstream.version}" excludes="README.md jquery*"/>
+                                    <fileset dir="${project.build.directory}/prettyCheckable-${upstream.version}" excludes="README.md jquery*" />
                                 </move>
                             </target>
                         </configuration>
